@@ -24,6 +24,9 @@
     "url": "https://github.com/prafesar/project-lvl1-s486/issues"
   },
   "homepage": "https://github.com/prafesar/project-lvl1-s486#readme",
+  "jest": {
+    "testEnvironment": "node"
+  },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
