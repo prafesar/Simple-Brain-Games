@@ -4,7 +4,7 @@ const getAnswer = askAny => question(askAny);
 
 const getRandomNumber = () => Math.floor(Math.random() * 100);
 
-const gameEven = (userName) => {
+export const gameEven = (userName) => {
   for (let i = 0; i < 3; i += 1) {
     const number = getRandomNumber();
     const rigthAnswer = (number % 2 === 0) ? 'yes' : 'no';
