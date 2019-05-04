@@ -1,10 +1,11 @@
 {
   "name": "prafesars-braingames",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Brain Games - Start JS whit Hexlet",
   "main": "index.js",
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   },
   "scripts": {
     "test": "test",

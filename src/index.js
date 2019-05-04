@@ -1,6 +1,5 @@
-import readlineSync from 'readline-sync';
+import { question } from 'readline-sync';
 
-export default () => {
-  const userName = readlineSync.question('May I have your name? ');
-  return console.log(`Hi${userName}!`);
-};
+export const getAnswer = askAny => question(askAny);
+
+export const getRandomNumber = () => Math.floor(Math.random() * 100);
