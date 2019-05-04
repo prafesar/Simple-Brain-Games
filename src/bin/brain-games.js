@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { getAnswer } from '..';
+import getAnswer from '..';
 
 console.log('\nWelcome to the Brain Games!\n');
 
