@@ -1,6 +1,6 @@
 {
   "name": "prafesars-braingames",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Brain Games - Start JS whit Hexlet",
   "main": "index.js",
   "bin": {
