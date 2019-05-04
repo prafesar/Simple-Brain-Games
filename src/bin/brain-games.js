@@ -2,4 +2,3 @@
 import sayMyName from '..';
 
 sayMyName();
-
