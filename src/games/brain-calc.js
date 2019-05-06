@@ -1,0 +1,34 @@
+import playGame, {
+  greeting, getRandomInteger, makeIssue,
+} from '..';
+
+const getIssueForGameCalc = () => {
+  const n1 = getRandomInteger();
+  const n2 = getRandomInteger();
+
+  const operators = '*-+';
+  const operatorStr = operators[getRandomInteger(0, operators.length - 1)];
+  const condition = `${n1} ${operatorStr} ${n2}`;
+
+  let answer = 0;
+  switch (operatorStr) {
+    case '*':
+      answer = n1 * n2;
+      break;
+    case '+':
+      answer = n1 + n2;
+      break;
+    case '-':
+      answer = n1 - n2;
+      break;
+    default:
+      answer = 0;
+  }
+  return makeIssue(condition, answer);
+};
+
+export default () => {
+  greeting();
+  console.log('Answer "yes" if number even otherwise answer "no".\n');
+  return playGame(getIssueForGameCalc);
+};
