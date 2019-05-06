@@ -31,5 +31,5 @@ export default (f) => {
       return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'`);
     }
   }
-  return console.log(`\nCongratulations, ${userName}!`);
+  return console.log(`\nCongratulations, ${userName}!\n`);
 };
