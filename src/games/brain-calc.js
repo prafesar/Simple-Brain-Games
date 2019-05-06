@@ -29,6 +29,6 @@ const getIssueForGameCalc = () => {
 
 export default () => {
   greeting();
-  console.log('Answer "yes" if number even otherwise answer "no".\n');
+  console.log('What is the result of the expression?\n');
   return playGame(getIssueForGameCalc);
 };
