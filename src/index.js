@@ -28,8 +28,7 @@ export default (f) => {
     if (userAnswer == answer) {
       console.log('Correct!\n');
     } else {
-      return console.log(`'${userAnswer}' is wrong answer ;(. 
-        Correct answer was '${answer}'\nLet's try again, ${userName}!`);
+      return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'\nLet's try again, ${userName}!`);
     }
   }
   return console.log(`\nCongratulations, ${userName}!\n`);
