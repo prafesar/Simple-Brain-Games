@@ -15,6 +15,10 @@
 
 [![asciicast](https://asciinema.org/a/yBjJtWCS1zqbbEJTQytgWbccR.svg)](https://asciinema.org/a/yBjJtWCS1zqbbEJTQytgWbccR)
 
+## 5. Prime Numbers
+
+[![asciicast](https://asciinema.org/a/6h8QxEyVVmvsAcgycqTcI7ZOD.svg)](https://asciinema.org/a/6h8QxEyVVmvsAcgycqTcI7ZOD)
+
 to be continued...
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
