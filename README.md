@@ -11,7 +11,11 @@
 
 [![asciicast](https://asciinema.org/a/N7cwOy49KVAKnkKg2pZNrVNA7.svg)](https://asciinema.org/a/N7cwOy49KVAKnkKg2pZNrVNA7)
 
-## 4. to be continued...
+## 4. Progression
+
+[![asciicast](https://asciinema.org/a/yBjJtWCS1zqbbEJTQytgWbccR.svg)](https://asciinema.org/a/yBjJtWCS1zqbbEJTQytgWbccR)
+
+to be continued...
 
 [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
 
