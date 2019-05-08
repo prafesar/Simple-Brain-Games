@@ -1,9 +1,9 @@
 {
   "name": "prafesars-braingames",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Brain Games - Start JS whit Hexlet",
   "keywords": [
-    "brain", "games", "simple", "hexlet"
+    "brain", "games", "simple", "hexlet", "prafesar"
   ],
   "bin": {
     "brain-calc": "dist/bin/calc.js",
