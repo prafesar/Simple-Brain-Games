@@ -1,6 +1,5 @@
-import playGame, {
-  greeting, getRandomInteger, makeIssue,
-} from '..';
+import playGame, { greeting, makeIssue } from '..';
+import getRandomInteger from '../utils';
 
 const isEven = number => number % 2 === 0;
 

@@ -11,15 +11,11 @@ export const getAnswer = issue => issue.answer;
 
 export const greeting = () => console.log('\nWelcome to the Brain Games!');
 
-export const getRandomInteger = (min = 1, max = 30) => Math.floor(
-  Math.random() * (max - min + 1) + min,
-);
-
-export default (f) => {
+export default (f, steps = 3) => {
   const userName = getUserAnswer('May I have your name? ');
   console.log(`Hi, ${userName}!\n`);
 
-  for (let i = 0; i < 3; i += 1) {
+  for (let i = 0; i < steps; i += 1) {
     const issue = f();
     const question = getQuestion(issue);
     const answer = getAnswer(issue);
@@ -28,7 +24,8 @@ export default (f) => {
     if (userAnswer == answer) {
       console.log('Correct!\n');
     } else {
-      return console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'\nLet's try again, ${userName}!`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'`);
+      return console.log(`Let's try again, ${userName}!`);
     }
   }
   return console.log(`\nCongratulations, ${userName}!\n`);

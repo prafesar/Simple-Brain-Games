@@ -1,6 +1,5 @@
-import playGame, {
-  greeting, getRandomInteger, makeIssue,
-} from '..';
+import playGame, { greeting, makeIssue } from '..';
+import getRandomInteger from '../utils';
 
 function makeProgression(stepsCount = 10) {
   const progression = [];

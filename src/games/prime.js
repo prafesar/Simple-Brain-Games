@@ -1,6 +1,5 @@
-import playGame, {
-  greeting, getRandomInteger, makeIssue,
-} from '..';
+import playGame, { greeting, makeIssue } from '..';
+import getRandomInteger from '../utils';
 
 const isPrime = (num) => {
   for (let i = 2, s = Math.sqrt(num); i <= s; i += 1) {
