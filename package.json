@@ -5,7 +5,6 @@
   "keywords": [
     "brain", "games", "simple", "hexlet"
   ],
-  "main": "index.js",
   "bin": {
     "brain-calc": "dist/bin/brain-calc.js",
     "brain-even": "dist/bin/brain-even.js",
@@ -40,10 +39,7 @@
     "eslint": "^5.16.0",
     "eslint-config-airbnb-base": "^13.1.0",
     "eslint-plugin-babel": "^5.3.0",
-    "eslint-plugin-import": "^2.17.2",
-    "eslint-plugin-jest": "^22.5.1",
-    "eslint-plugin-lodash-fp": "^2.2.0-a1",
-    "eslint-plugin-react": "^7.13.0"
+    "eslint-plugin-import": "^2.17.2"
   },
   "dependencies": {
     "readline-sync": "^1.4.9"
