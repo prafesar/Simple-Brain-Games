@@ -7,9 +7,9 @@ export default () => {
   console.log('Answer "yes" if number even otherwise answer "no".\n');
   return playGame(
     () => {
-      const number = getRandomInteger();
-      const answer = number % 2 === 0 ? 'yes' : 'no';
-      return makeIssue(number, answer);
+      const gamesQuestion = getRandomInteger();
+      const answer = gamesQuestion % 2 === 0 ? 'yes' : 'no';
+      return makeIssue(gamesQuestion, answer);
     },
   );
 };
