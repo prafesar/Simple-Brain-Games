@@ -4,6 +4,16 @@
 
 [![Build Status](https://travis-ci.org/prafesar/project-lvl1-s486.svg?branch=master)](https://travis-ci.org/prafesar/project-lvl1-s486)
 
+## Install process and play all games
+
+[![asciicast](https://asciinema.org/a/m98nocgCq0WrnYc8DHzpInYIV.svg)](https://asciinema.org/a/m98nocgCq0WrnYc8DHzpInYIV)
+
+* [0:25 even](https://asciinema.org/a/m98nocgCq0WrnYc8DHzpInYIV?t=0:25)
+* [1:12 calc](https://asciinema.org/a/m98nocgCq0WrnYc8DHzpInYIV?t=1:12)
+* [2:00 gcd](https://asciinema.org/a/m98nocgCq0WrnYc8DHzpInYIV?t=2:00)
+* [2:40 prime](https://asciinema.org/a/m98nocgCq0WrnYc8DHzpInYIV?t=2:40)
+* [3:40 progression](https://asciinema.org/a/m98nocgCq0WrnYc8DHzpInYIV?t=3:40)
+
 ## 1. Is Number Even or Not?
 
 [![asciicast](https://asciinema.org/a/244384.svg)](https://asciinema.org/a/244384)
