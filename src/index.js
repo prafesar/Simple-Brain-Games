@@ -6,8 +6,8 @@ export const makeIssue = (question, answer) => {
   issue.answer = answer;
   return issue;
 };
-export const getQuestion = issue => issue.question;
-export const getAnswer = issue => issue.answer;
+const getQuestion = issue => issue.question;
+const getAnswer = issue => issue.answer;
 
 export const greeting = () => console.log('\nWelcome to the Brain Games!');
 
