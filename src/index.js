@@ -20,8 +20,7 @@ export default (f, steps = 3) => {
     const question = getQuestion(issue);
     const answer = getAnswer(issue);
     const userAnswer = getUserAnswer(`Question: ${question} \nYour answer: `);
-    // eslint-disable-next-line eqeqeq
-    if (userAnswer == answer) {
+    if (String(userAnswer) === String(answer)) {
       console.log('Correct!\n');
     } else {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'`);
