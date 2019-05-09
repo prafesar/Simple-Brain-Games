@@ -9,9 +9,9 @@ export const makeIssue = (question, answer) => {
 const getQuestion = issue => issue.question;
 const getAnswer = issue => issue.answer;
 
-export const greeting = () => console.log('\nWelcome to the Brain Games!');
-
-export default (f, steps = 3) => {
+export default (f, rules = '', steps = 3) => {
+  console.log('\nWelcome to the Brain Games!');
+  console.log(rules);
   const userName = getUserAnswer('May I have your name? ');
   console.log(`Hi, ${userName}!\n`);
 

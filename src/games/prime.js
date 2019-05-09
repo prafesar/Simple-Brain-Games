@@ -1,14 +1,5 @@
-import playGame, { greeting, makeIssue } from '..';
-import getRandomInteger from '../utils';
-
-const isPrime = (num) => {
-  for (let i = 2, s = Math.sqrt(num); i <= s; i += 1) {
-    if (num % i === 0) {
-      return false;
-    }
-  }
-  return num > 1;
-};
+import playGame, { makeIssue } from '..';
+import getRandomInteger, { isPrime } from '../utils';
 
 const getIssueForPrime = () => {
   const condition = getRandomInteger();
@@ -17,7 +8,6 @@ const getIssueForPrime = () => {
 };
 
 export default () => {
-  greeting();
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".\n');
-  return playGame(getIssueForPrime);
+  const rules = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+  return playGame(getIssueForPrime, rules);
 };

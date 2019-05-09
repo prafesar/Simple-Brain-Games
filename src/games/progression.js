@@ -1,18 +1,5 @@
-import playGame, { greeting, makeIssue } from '..';
-import getRandomInteger from '../utils';
-
-function makeProgression(stepsCount = 10) {
-  const progression = [];
-  const startPoint = getRandomInteger();
-  const step = getRandomInteger(2, 5);
-  const iter = (acc, currentItem) => {
-    if (acc.length === stepsCount) {
-      return acc;
-    }
-    return iter([...acc, currentItem], currentItem + step);
-  };
-  return iter(progression, startPoint);
-}
+import playGame, { makeIssue } from '..';
+import getRandomInteger, { makeProgression } from '../utils';
 
 function getIssueForProgression() {
   const progression = makeProgression();
@@ -26,7 +13,6 @@ function getIssueForProgression() {
 }
 
 export default () => {
-  greeting();
-  console.log('What number is missing in the progression?\n');
-  return playGame(getIssueForProgression);
+  const rules = 'What number is missing in the progression?';
+  return playGame(getIssueForProgression, rules);
 };

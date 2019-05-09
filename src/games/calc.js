@@ -1,4 +1,4 @@
-import playGame, { greeting, makeIssue } from '..';
+import playGame, { makeIssue } from '..';
 import getRandomInteger from '../utils';
 
 const getIssueForGameCalc = () => {
@@ -27,7 +27,6 @@ const getIssueForGameCalc = () => {
 };
 
 export default () => {
-  greeting();
-  console.log('What is the result of the expression?\n');
-  return playGame(getIssueForGameCalc);
+  const rules = 'What is the result of the expression?';
+  return playGame(getIssueForGameCalc, rules);
 };
