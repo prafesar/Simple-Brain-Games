@@ -9,11 +9,13 @@ export const makeIssue = (question, answer) => {
 const getQuestion = issue => issue.question;
 const getAnswer = issue => issue.answer;
 
+const output = str => console.log(str);
+
 export default (f, rules = '', steps = 3) => {
-  console.log('\nWelcome to the Brain Games!');
-  console.log(rules);
+  output('\nWelcome to the Brain Games!');
+  output(rules);
   const userName = getUserAnswer('May I have your name? ');
-  console.log(`Hi, ${userName}!\n`);
+  output(`Hi, ${userName}!\n`);
 
   for (let i = 0; i < steps; i += 1) {
     const issue = f();
@@ -21,11 +23,13 @@ export default (f, rules = '', steps = 3) => {
     const answer = getAnswer(issue);
     const userAnswer = getUserAnswer(`Question: ${question} \nYour answer: `);
     if (String(userAnswer) === String(answer)) {
-      console.log('Correct!\n');
+      output('Correct!\n');
     } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'`);
-      return console.log(`Let's try again, ${userName}!`);
+      output(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'`);
+      output(`Let's try again, ${userName}!`);
+      return false;
     }
   }
-  return console.log(`\nCongratulations, ${userName}!\n`);
+  output(`\nCongratulations, ${userName}!\n`);
+  return true;
 };
