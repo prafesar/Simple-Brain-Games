@@ -1,4 +1,4 @@
-import playGame, { makeIssue } from '..';
+import playGame from '..';
 import getRandomInteger from '../utils';
 
 export const getGreatestCommonDivisor = (a, b) => {
@@ -16,9 +16,10 @@ export const getGreatestCommonDivisor = (a, b) => {
 function getIssueForGameGcd() {
   const n1 = getRandomInteger();
   const n2 = getRandomInteger();
-  const condition = `${n1} ${n2}`;
-  const answer = getGreatestCommonDivisor(n1, n2);
-  return makeIssue(condition, answer);
+  const issue = {};
+  issue.question = `${n1} ${n2}`;
+  issue.answer = getGreatestCommonDivisor(n1, n2);
+  return issue;
 }
 
 export default () => {

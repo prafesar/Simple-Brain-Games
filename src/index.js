@@ -1,13 +1,5 @@
 import { question as getUserAnswer } from 'readline-sync';
 
-export const makeIssue = (question, answer) => {
-  const issue = {};
-  issue.question = question;
-  issue.answer = answer;
-  return issue;
-};
-const getQuestion = issue => issue.question;
-const getAnswer = issue => issue.answer;
 const steps = 3;
 
 export default (getIssue, description = '') => {
@@ -18,17 +10,13 @@ export default (getIssue, description = '') => {
 
   for (let i = 0; i < steps; i += 1) {
     const issue = getIssue();
-    const question = getQuestion(issue);
-    const answer = getAnswer(issue);
-    const userAnswer = getUserAnswer(`Question: ${question} \nYour answer: `);
-    if (String(userAnswer) === String(answer)) {
+    const userAnswer = getUserAnswer(`Question: ${issue.question} \nYour answer: `);
+    if (String(userAnswer) === String(issue.answer)) {
       console.log('Correct!\n');
     } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${issue.answer}'`);
       console.log(`Let's try again, ${userName}!`);
-      return false;
     }
   }
   console.log(`\nCongratulations, ${userName}!\n`);
-  return true;
 };

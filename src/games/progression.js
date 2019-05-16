@@ -1,4 +1,4 @@
-import playGame, { makeIssue } from '..';
+import playGame from '..';
 import getRandomInteger from '../utils';
 
 const stepsCount = 10;
@@ -18,13 +18,13 @@ const makeProgression = () => {
 
 function getIssueForProgression() {
   const progression = makeProgression();
-  // get random item of progression and hide it
   const hiddenElementPosition = getRandomInteger(0, progression.length - 1);
-  const answer = progression[hiddenElementPosition];
+  const issue = {};
+  issue.answer = progression[hiddenElementPosition];
   const newProgression = progression.slice();
   newProgression[hiddenElementPosition] = '..';
-  const condition = newProgression.join(' ');
-  return makeIssue(condition, answer);
+  issue.question = newProgression.join(' ');
+  return issue;
 }
 
 export default () => {

@@ -1,4 +1,4 @@
-import playGame, { makeIssue } from '..';
+import playGame from '..';
 import getRandomInteger from '../utils';
 
 const getIssueForGameCalc = () => {
@@ -7,23 +7,24 @@ const getIssueForGameCalc = () => {
 
   const operators = '*-+';
   const operatorStr = operators[getRandomInteger(0, operators.length - 1)];
-  const condition = `${n1} ${operatorStr} ${n2}`;
 
-  let answer = 0;
+  const issue = {};
+  issue.question = `${n1} ${operatorStr} ${n2}`;
+
   switch (operatorStr) {
     case '*':
-      answer = n1 * n2;
+      issue.answer = n1 * n2;
       break;
     case '+':
-      answer = n1 + n2;
+      issue.answer = n1 + n2;
       break;
     case '-':
-      answer = n1 - n2;
+      issue.answer = n1 - n2;
       break;
     default:
-      answer = 0;
+      issue.answer = 0;
   }
-  return makeIssue(condition, answer);
+  return issue;
 };
 
 export default () => {

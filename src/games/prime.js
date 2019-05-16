@@ -1,4 +1,4 @@
-import playGame, { makeIssue } from '..';
+import playGame from '..';
 import getRandomInteger from '../utils';
 
 export const isPrime = (num) => {
@@ -11,9 +11,11 @@ export const isPrime = (num) => {
 };
 
 const getIssueForPrime = () => {
-  const condition = getRandomInteger();
-  const answer = isPrime(condition) ? 'yes' : 'no';
-  return makeIssue(condition, answer);
+  const issue = {};
+  const number = getRandomInteger();
+  issue.question = number;
+  issue.answer = isPrime(number) ? 'yes' : 'no';
+  return issue;
 };
 
 export default () => {
