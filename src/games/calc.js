@@ -27,6 +27,6 @@ const getIssueForGameCalc = () => {
 };
 
 export default () => {
-  const rules = 'What is the result of the expression?';
-  return playGame(getIssueForGameCalc, rules);
+  const description = 'What is the result of the expression?';
+  return playGame(getIssueForGameCalc, description);
 };
