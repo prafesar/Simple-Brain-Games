@@ -1,11 +1,12 @@
 import playGame from '..';
 import getRandomInteger from '../utils';
 
+const description = 'What is the result of the expression?';
+const operators = '*-+';
+
 const getIssueForGameCalc = () => {
   const n1 = getRandomInteger();
   const n2 = getRandomInteger();
-
-  const operators = '*-+';
   const operatorStr = operators[getRandomInteger(0, operators.length - 1)];
 
   const issue = {};
@@ -27,7 +28,4 @@ const getIssueForGameCalc = () => {
   return issue;
 };
 
-export default () => {
-  const description = 'What is the result of the expression?';
-  return playGame(getIssueForGameCalc, description);
-};
+export default () => playGame(getIssueForGameCalc, description);

@@ -1,12 +1,14 @@
 import playGame from '..';
 import getRandomInteger from '../utils';
 
+const description = 'What number is missing in the progression?';
 const stepsCount = 10;
 
 const makeProgression = () => {
   const progression = [];
   const startPoint = getRandomInteger();
   const step = getRandomInteger(2, 5);
+
   const iter = (acc, currentItem) => {
     if (acc.length === stepsCount) {
       return acc;
@@ -27,7 +29,4 @@ function getIssueForProgression() {
   return issue;
 }
 
-export default () => {
-  const description = 'What number is missing in the progression?';
-  return playGame(getIssueForProgression, description);
-};
+export default () => playGame(getIssueForProgression, description);

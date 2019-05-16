@@ -1,7 +1,9 @@
 import playGame from '..';
 import getRandomInteger from '../utils';
 
-export const getGreatestCommonDivisor = (a, b) => {
+const description = 'Find the greatest common divisor of given numbers.';
+
+const getGreatestCommonDivisor = (a, b) => {
   const min = a >= b ? b : a;
   const iter = (divisor) => {
     if (a % divisor === 0 && b % divisor === 0) {
@@ -22,7 +24,4 @@ function getIssueForGameGcd() {
   return issue;
 }
 
-export default () => {
-  const description = 'Find the greatest common divisor of given numbers.';
-  return playGame(getIssueForGameGcd, description);
-};
+export default () => playGame(getIssueForGameGcd, description);
