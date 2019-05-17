@@ -15,7 +15,7 @@ export default (getIssue, description = '') => {
       console.log('Correct!\n');
     } else {
       console.log(`\n'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'`);
-      return console.log(`Let's try again, ${userName}!`);
+      return console.log(`Let's try again, ${userName}!\n`);
     }
   }
   return console.log(`\nCongratulations, ${userName}!\n`);
