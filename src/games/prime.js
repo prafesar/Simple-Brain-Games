@@ -13,11 +13,10 @@ const isPrime = (num) => {
 };
 
 const getIssueForPrime = () => {
-  const issue = {};
   const number = getRandomInteger();
-  issue.question = number;
-  issue.answer = isPrime(number) ? 'yes' : 'no';
-  return issue;
+  const question = number;
+  const answer = isPrime(number) ? 'yes' : 'no';
+  return { question, answer };
 };
 
 export default () => playGame(getIssueForPrime, description);

@@ -8,24 +8,22 @@ const getIssueForGameCalc = () => {
   const n1 = getRandomInteger();
   const n2 = getRandomInteger();
   const operatorStr = operators[getRandomInteger(0, operators.length - 1)];
-
-  const issue = {};
-  issue.question = `${n1} ${operatorStr} ${n2}`;
-
+  const question = `${n1} ${operatorStr} ${n2}`;
+  let answer;
   switch (operatorStr) {
     case '*':
-      issue.answer = n1 * n2;
+      answer = String(n1 * n2);
       break;
     case '+':
-      issue.answer = n1 + n2;
+      answer = String(n1 + n2);
       break;
     case '-':
-      issue.answer = n1 - n2;
+      answer = String(n1 - n2);
       break;
     default:
-      issue.answer = 0;
+      answer = '';
   }
-  return issue;
+  return { question, answer };
 };
 
 export default () => playGame(getIssueForGameCalc, description);
