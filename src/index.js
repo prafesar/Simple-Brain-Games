@@ -1,6 +1,6 @@
 import { question as getUserAnswer } from 'readline-sync';
 
-const steps = 3;
+const stepsCount = 3;
 
 export default (getIssue, description = '') => {
   console.log('\nWelcome to the Brain Games!');
@@ -8,7 +8,7 @@ export default (getIssue, description = '') => {
   const userName = getUserAnswer('\nMay I have your name? ');
   console.log(`Hi, ${userName}!\n`);
 
-  for (let i = 0; i < steps; i += 1) {
+  for (let i = 0; i < stepsCount; i += 1) {
     const { question, answer } = getIssue();
     const userAnswer = getUserAnswer(`Question: ${question} \nYour answer: `);
     if (userAnswer === answer) {
