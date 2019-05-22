@@ -14,8 +14,12 @@ const makeProgression = (startElement, step, stepsCount) => {
   return iter(progression, startElement);
 };
 
+const stepsCount = 10;
+
 function getIssueForProgression() {
-  const progression = makeProgression(7, 5, 10);
+  const startItem = getRandomInteger(10, 30);
+  const step = getRandomInteger(3, 7);
+  const progression = makeProgression(startItem, step, stepsCount);
   const hiddenElementPosition = getRandomInteger(0, progression.length - 1);
   const answer = String(progression[hiddenElementPosition]);
 
