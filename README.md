@@ -1,6 +1,6 @@
 # Brain Games From Prafesar
 
-[![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
+[![Maintainability](https://api.codeclimate.com/v1/badges/0ff1878381d0c0e4bf7f/maintainability)](https://codeclimate.com/github/prafesar/project-lvl1-s486/maintainability)
 
 [![Build Status](https://travis-ci.org/prafesar/project-lvl1-s486.svg?branch=master)](https://travis-ci.org/prafesar/project-lvl1-s486)
 
