@@ -2,8 +2,7 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/0ff1878381d0c0e4bf7f/maintainability)](https://codeclimate.com/github/prafesar/project-lvl1-s486/maintainability)
 
-[![Build Status](https://travis-ci.org/prafesar/project-lvl1-s486.svg?branch=master)](https://travis-ci.org/prafesar/project-lvl1-s486)
-
+[![Build Status](https://travis-ci.org/prafesar/Simple-Brain-Games.svg?branch=master)](https://travis-ci.org/prafesar/Simple-Brain-Games)
 ## Install process and play all games
 
 [![asciicast](https://asciinema.org/a/m98nocgCq0WrnYc8DHzpInYIV.svg)](https://asciinema.org/a/m98nocgCq0WrnYc8DHzpInYIV)
