@@ -3,7 +3,11 @@
   "version": "1.0.16",
   "description": "Brain Games - Start JS whit Hexlet",
   "keywords": [
-    "brain", "games", "simple", "hexlet", "prafesar"
+    "brain",
+    "games",
+    "simple",
+    "hexlet",
+    "prafesar"
   ],
   "bin": {
     "brain-calc": "dist/bin/brain-calc.js",
